@@ -52,14 +52,17 @@
     "@dcloudio/uni-quickapp-native": "^2.0.0-27920200618002",
     "@dcloudio/uni-quickapp-webview": "^2.0.0-27920200618002",
     "@dcloudio/uni-stat": "^2.0.0-27920200618002",
+    "@types/set-cookie-parser": "0.0.6",
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
+    "set-cookie-parser": "^2.4.6",
     "uview-ui": "^1.5.2",
     "vue": "^2.6.11",
     "vue-class-component": "^6.3.2",
     "vue-property-decorator": "^8.0.0",
-    "vuex": "^3.2.0"
+    "vuex": "^3.2.0",
+    "vuex-class-modules": "^1.1.2"
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.2.0",

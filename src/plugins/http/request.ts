@@ -3,6 +3,7 @@ import ResultV0 from '@/model/ResultVO'
 interface Header {
     'Content-Type'?:string;
     'Accept'?: string;
+    'Cookie'?:string;
     [propName:string]:any;
 }
 
@@ -99,10 +100,10 @@ interface RequestConfig {
                 this.requestBeforeFunc = f
             }
           },
-          response: (cb: ResponseCb, errorcb: ResponseCb) => {
-            if(cb && errorcb) {
+          response: (cb: ResponseCb, errcb: ResponseCb) => {
+            if(cb && errcb) {
                 this.requestComFunc = cb
-                this.requestComFail = errorcb
+                this.requestComFail = errcb
             }
           }
       }
