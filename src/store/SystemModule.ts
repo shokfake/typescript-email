@@ -1,8 +1,8 @@
 import { VuexModule, Module, Action } from 'vuex-class-modules'
-import PlatformType from '@/enum/PlatformType'
-import { ProviderType, Provider } from '@/enum/ProviderType'
 import GetSystemInfoResult = UniApp.GetSystemInfoResult
 import { AppInitAPI } from '@/api/AppInitAPI'
+import PlatformType from '@/const/PlatformType'
+import { Provider, ProviderType } from '@/const/ProviderType'
 
 @Module({ generateMutationSetters: true })
 export class SystemModule extends VuexModule {

@@ -14,6 +14,7 @@ interface Config {
     method: string;
     dataType: string;
     responseType: string;
+    withCredentials?:boolean;
 }
 
 interface Interceptor {
@@ -86,7 +87,10 @@ interface RequestConfig {
         },
         method: 'GET',
         dataType: 'json',
-        responseType: 'text'
+        responseType: 'text',
+        // #ifdef H5
+        withCredentials: true
+        // #endif
       }
 
       // 判断url是否为绝对路径

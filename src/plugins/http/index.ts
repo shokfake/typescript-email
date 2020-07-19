@@ -2,6 +2,7 @@ import Request, { RequestConfig } from "./request";
 import TokenUtil from '@/utils/TokenUtil';
 import CookieUtil from '@/utils/CookieUitl';
 import UniUtil from '@/utils/UniUtil';
+import { ErrorCode } from '@/const/ErrorCode';
 
 const http:Request = new Request()
 http.setConfig((config: { baseUrl: any; }) => {
@@ -23,12 +24,10 @@ http.interceptor.request((config: RequestConfig) => {
 
 http.interceptor.response(
     (response:any) => {
-        console.log('http response response: ', response)
         return response.data
 
     },
     (error:any) => {
-        console.log('http response error: ', error)
         if(error.statusCode) {
             const result = error.data
             switch(error.statusCode) {
