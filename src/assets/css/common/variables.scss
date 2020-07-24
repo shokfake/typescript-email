@@ -1,0 +1,19 @@
+/** skin variables */
+@import '../skin/skin.scss';
+
+/** action sheets for Android */
+$action-sheet-border-bottom: 1px solid #c0c1c2;
+
+/** design view port */
+$design-screen-width: 768px;
+
+/** compose */
+$compose-input-height: 32px;
+$attachment-item-height: 72px;
+$list-checkbox-size: 20px;
+
+/** mail list */
+$mail-list-item-height: px2rem(180px);
+
+/** read */
+$contact-item-color: css-var(--main-color, $main-color);

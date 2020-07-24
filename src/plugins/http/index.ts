@@ -25,7 +25,6 @@ http.interceptor.request((config: RequestConfig) => {
 http.interceptor.response(
     (response:any) => {
         return response.data
-
     },
     (error:any) => {
         if(error.statusCode) {

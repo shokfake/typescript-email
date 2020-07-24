@@ -1,14 +1,21 @@
 <script lang="ts">
     import Vue from 'vue';
     import { systemModule } from '@/store'
+    import defaultConfig from '@/config/serverConfig'
+    import { AppInitAPI } from '@/api/AppInitAPI'
     export default Vue.extend({
+        globalData: {
+            defaultConfig,
+        },
         mpType: 'app',
         onLaunch() {
-            systemModule.appInit()
+            AppInitAPI.getServerConfig()
         }
     });
 </script>
 
-<style>
-    /*每个页面公共css */
+<style lang="scss">
+@import "uview-ui/index.scss";
+@import '@/assets/css/fonts/iconfont.css';
+@import '@/uni.scss';
 </style>

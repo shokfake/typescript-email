@@ -1,6 +1,6 @@
-export default {
+export const zh_CN = {
     'LOGIN': {
-      'TITLE': '登录Coremail企业邮箱',
+      'TITLE': '登录Outlook企业邮箱',
       'BTN': '登录',
       'SIGNING_IN': '正在登录中',
       'PASSWORD_PLACE': '请输入密码',

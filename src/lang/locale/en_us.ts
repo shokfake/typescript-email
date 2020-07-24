@@ -1,4 +1,4 @@
-export default {
+export const en_US = {
     'LOGIN': {
       'TITLE': 'Login to Coremail corporate mailbox',
       'BTN': 'Login',

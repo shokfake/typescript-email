@@ -1,4 +1,4 @@
-export default {
+export const zh_TW = {
     'LOGIN': {
       'TITLE': '登錄Coremail企業郵箱',
       'BTN': '登錄',
